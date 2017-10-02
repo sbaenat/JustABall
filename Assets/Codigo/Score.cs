@@ -9,13 +9,11 @@ public class Score : MonoBehaviour {
 
     Text text;
 
-	// Use this for initialization
 	void Start () {
         text = GetComponent<Text>();
-        score = 35;
+        score = 70;
 	}
 	
-	// Update is called once per frame
 	void Update () {
         text.text = "Score: " + score;
 	}

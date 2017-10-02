@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Take1 : MonoBehaviour {
 
+    public static int compra;
+
     void Start()
     {
-
+        compra = 1;
     }
 
     void Update()
@@ -14,13 +16,25 @@ public class Take1 : MonoBehaviour {
 
     }
 
-    public void OnTrigger(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        if (Score.score >= 0)
+        if (Score.score >= 35)
         {
-            Score.score = Score.score - 0;
-            tienda.number = 0;
-            tienda.changeBall = true;
+            if (compra > 0)
+            {
+                tienda.number = 0;
+                tienda.changeBall = true;
+                compra--;
+            }
+        }
+
+        else
+        {
+            if (compra == 0)
+            {
+                tienda.number = 0;
+                tienda.changeBall = true;
+            }
         }
     }
 }

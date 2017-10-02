@@ -36,21 +36,21 @@ public class tienda : MonoBehaviour {
     {
         if (changeBall)
         {
-            //int i = 0;
+            int i = 0;
 
             Destroy(GameObject.FindWithTag("Jugador"));
-            //Destroy(GameObject.FindWithTag("Pick Up"));
+            Destroy(GameObject.FindWithTag("Pick Up"));
 
             Instantiate(ball[number], transform.position, transform.rotation);
 
-            /*while(i<7)
+            while(i<7)
             {
                 if(get[i]==false)
                 {
                     Instantiate(up[number], empty[i].transform);
                     i++;
                 }
-            }*/
+            }
 
             changeBall = false;
         }
