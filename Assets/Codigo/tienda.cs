@@ -38,8 +38,14 @@ public class tienda : MonoBehaviour {
         {
             int i = 0;
 
+            GameObject[] picks = GameObject.FindGameObjectsWithTag("Pick Up");
+
             Destroy(GameObject.FindWithTag("Jugador"));
-            Destroy(GameObject.FindWithTag("Pick Up"));
+
+            foreach (GameObject ups in picks)
+            {
+                GameObject.Destroy(ups);
+            }
 
             Instantiate(ball[number], transform.position, transform.rotation);
 
