@@ -23,8 +23,8 @@ public class Take6 : MonoBehaviour {
             if (compra > 0)
             {
                 Score.score = Score.score - 35;
-                tienda.number = 5;
-                tienda.changeBall = true;
+                tienda2.number = 5;
+                tienda2.changeBall = true;
                 compra--;
             }
         }
@@ -33,8 +33,8 @@ public class Take6 : MonoBehaviour {
         {
             if (compra == 0)
             {
-                tienda.number = 5;
-                tienda.changeBall = true;
+                tienda2.number = 5;
+                tienda2.changeBall = true;
             }
         }
     }

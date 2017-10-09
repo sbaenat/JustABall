@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Take3 : MonoBehaviour {
+public class Take2 : MonoBehaviour {
 
     public static int compra;
 
@@ -18,13 +18,13 @@ public class Take3 : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if (Score.score >= 35)
+        if (Score.score >= 20)
         {
             if (compra > 0)
             {
-                Score.score = Score.score - 35;
-                tienda.number = 2;
-                tienda.changeBall = true;
+                Score.score = Score.score - 20;
+                tienda2.number = 1;
+                tienda2.changeBall = true;
                 compra--;
             }
         }
@@ -33,8 +33,8 @@ public class Take3 : MonoBehaviour {
         {
             if (compra == 0)
             {
-                tienda.number = 2;
-                tienda.changeBall = true;
+                tienda2.number = 1;
+                tienda2.changeBall = true;
             }
         }
     }

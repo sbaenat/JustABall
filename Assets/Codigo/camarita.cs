@@ -18,6 +18,11 @@ public class camarita : MonoBehaviour {
 
     void LateUpdate()
     {
+        follower();
+    }
+
+    void follower()
+    {
         jugador = GameObject.FindWithTag("Jugador");
 
         transform.position = jugador.transform.position + posicion;

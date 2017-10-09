@@ -65,15 +65,15 @@ public class bola : MonoBehaviour {
 
     void controlSalto()
     {
-        if (salto >= 3)
+        if (salto >= 2)
         {
-            salto = 2;
+            salto = 1;
         }
     }
 
     void saltar()
     {
-        if (Input.GetButtonDown("Jump") && salto>=1 )
+        if (Input.GetButtonDown("Fire3") && salto>=1 )
         {
             JumpSource.Play();
 

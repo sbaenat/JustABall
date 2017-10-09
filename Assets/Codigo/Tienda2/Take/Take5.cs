@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Take2 : MonoBehaviour {
+public class Take5 : MonoBehaviour {
 
     public static int compra;
 
@@ -23,8 +23,8 @@ public class Take2 : MonoBehaviour {
             if (compra > 0)
             {
                 Score.score = Score.score - 35;
-                tienda.number = 1;
-                tienda.changeBall = true;
+                tienda2.number = 4;
+                tienda2.changeBall = true;
                 compra--;
             }
         }
@@ -33,8 +33,8 @@ public class Take2 : MonoBehaviour {
         {
             if (compra == 0)
             {
-                tienda.number = 1;
-                tienda.changeBall = true;
+                tienda2.number = 4;
+                tienda2.changeBall = true;
             }
         }
     }

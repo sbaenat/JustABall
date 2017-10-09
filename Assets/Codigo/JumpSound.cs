@@ -14,7 +14,12 @@ public class JumpSound : MonoBehaviour {
     }
 	
 	void Update () {
+        jump();
+	}
+
+    void jump()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
             JumpSource.Play();
-	}
+    }
 }
